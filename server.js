@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Helper function to validate numbers
+// function to validate numbers
 const validateNumbers = (num1, num2 = null) => {
     if (isNaN(num1) || (num2 !== null && isNaN(num2))) {
         return { error: "Invalid input. Please provide valid numbers." };
